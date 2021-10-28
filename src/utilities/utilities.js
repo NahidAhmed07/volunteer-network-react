@@ -36,3 +36,9 @@ export const randomColor = () => {
     return colors[index];
   }
 };
+
+export const randomId = () => {
+  const randomNumber = Math.round(Math.random() * 1000000);
+  const id = `EV${randomNumber}ENT`;
+  return id;
+};

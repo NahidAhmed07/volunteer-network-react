@@ -10,6 +10,8 @@ import swal from "sweetalert";
 import VolunteerList from "../VolunteerList/VolunteerList";
 import { FiLogOut } from "react-icons/fi";
 import useAuth from "../../hooks/useAuth";
+import AddEvent from "../AddEvent/AddEvent";
+import AllEvents from "../AllEvents/AllEvents";
 
 const Admin = () => {
   const [userEvents, setUserEvents] = useState([]);
@@ -93,6 +95,14 @@ const Admin = () => {
             >
               <AiOutlinePlus></AiOutlinePlus> Add event
             </NavLink>
+            <br />
+            <NavLink
+              className="admin-nav-item"
+              activeClassName="admin-active-nav-item"
+              to="/admin/allEvent"
+            >
+              <AiOutlinePlus></AiOutlinePlus> All Events
+            </NavLink>
             <Nav.Link className="user-nav-item" onClick={adminLogout}>
               {" "}
               <FiLogOut className="me-2"></FiLogOut>Log out
@@ -108,7 +118,10 @@ const Admin = () => {
               ></VolunteerList>
             </Route>
             <Route path="/admin/addEvent">
-              <h4>Add Event</h4>
+              <AddEvent></AddEvent>
+            </Route>
+            <Route path="/admin/allEvent">
+              <AllEvents></AllEvents>
             </Route>
           </Switch>
         </Col>

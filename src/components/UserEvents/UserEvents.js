@@ -5,6 +5,7 @@ import swal from "sweetalert";
 import useAuth from "../../hooks/useAuth";
 import { processDate } from "../../utilities/utilities";
 import "./UserEvents.css";
+import AOS from "aos";
 const UserEvents = () => {
   const { user } = useAuth();
   const [userEvents, setUserEvents] = useState([]);
@@ -65,7 +66,7 @@ const UserEvents = () => {
       <Row sm={1} lg={2}>
         {userEvents.length > 0 ? (
           userEvents.map((event) => (
-            <Col key={event._id}>
+            <Col key={event._id} data-aos="fade-up">
               <div className="user-event-item d-flex flex-column flex-md-row p-4 gap-4 position-relative my-3">
                 <div className="user-event-img">
                   <img className="img-fluid " src={event.img} alt="" />

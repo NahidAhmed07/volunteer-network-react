@@ -14,6 +14,17 @@ import { AiOutlineAppstoreAdd } from "react-icons/ai";
 import "./Home.css";
 import { useHistory } from "react-router";
 import { randomColor } from "../../utilities/utilities";
+import AOS from "aos";
+AOS.init({
+  disable: false,
+  startEvent: "DOMContentLoaded",
+  initClassName: "aos-init",
+  animatedClassName: "aos-animate",
+  useClassNames: false,
+  disableMutationObserver: false,
+  debounceDelay: 50,
+  throttleDelay: 99,
+});
 
 const Home = () => {
   const [events, setEvents] = useState([]);
@@ -53,7 +64,12 @@ const Home = () => {
         <Row className="g-3 g-md-4 g-lg-5">
           {events.length > 0 ? (
             events.map((event) => (
-              <Col key={event._id} className="ms-4 ms-md-0">
+              <Col
+                key={event._id}
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                className="ms-4 ms-md-0"
+              >
                 <div className="event-item">
                   <div className="event-img">
                     <img className="img-fluid" src={event.img} alt="" />
