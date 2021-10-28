@@ -1,0 +1,62 @@
+.nav-item {
+  font-weight: 500;
+  font-size: 16px;
+  color: #0b0b0b !important;
+  margin-right: 15px;
+}
+
+.nav-btn {
+  border: none;
+  padding: 10px 25px;
+  font-weight: 400;
+  color: white;
+  border-radius: 3px;
+}
+
+.nav-reg {
+  background: #3f90fc;
+}
+
+.nav-admin {
+  background: #434141;
+}
+.user-avater {
+  cursor: pointer;
+}
+
+.user-menu {
+  background: #f6f6f6;
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  top: 90px;
+  z-index: 90;
+  border-radius: 5px;
+  border: 1px solid rgba(173, 173, 173, 0.479);
+  box-shadow: 8px 12px 8px 0px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 8px 12px 8px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 8px 12px 8px 0px rgba(0, 0, 0, 0.28);
+}
+
+.clos-btn {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 25px;
+  color: rgba(15, 15, 15, 0.521);
+  cursor: pointer;
+}
+
+.user-nav-item {
+  color: rgb(54, 54, 54) !important;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+.user-nav-item:hover {
+  color: #131313;
+}

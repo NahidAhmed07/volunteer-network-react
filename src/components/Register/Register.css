@@ -1,0 +1,31 @@
+.reg-form {
+  border: 1px solid rgba(73, 73, 73, 0.376);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.reg-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-color: rgba(128, 128, 128, 0.288);
+}
+
+.reg-form input:focus {
+  outline: none;
+}
+
+.reg-form label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.rag-submit {
+  background: #3f90fc;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 400;
+  color: white;
+  border-radius: 3px;
+}

@@ -1,0 +1,42 @@
+.login-form {
+  border: 1px solid rgba(68, 68, 68, 0.397);
+  padding: 30px;
+  border-radius: 5px;
+}
+.login-form h5 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.google-login {
+  border: 1px solid rgba(128, 128, 128, 0.37);
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.google-login img {
+  margin: 0 10px 3px 10px;
+}
+
+.google-login span {
+  background: #3f90fc;
+  display: inline-block;
+  padding: 10px 20px 10px 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.login-form p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #000000;
+}

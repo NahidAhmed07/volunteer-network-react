@@ -1,0 +1,25 @@
+.admin-nav-item {
+  text-decoration: none;
+  color: #0f0f0f;
+  font-weight: 500;
+  margin: 10px 0;
+  display: inline-block;
+  transition: 0.3s;
+}
+.admin-nav-item:hover {
+  transform: translateX(5px);
+}
+
+.admin-active-nav-item {
+  color: #2673d8;
+}
+
+.admin-delete-btn {
+  cursor: pointer;
+  display: inline-block;
+  color: red;
+  height: 25px;
+}
+.admin-delete-btn:hover {
+  transform: scale(1.1);
+}
