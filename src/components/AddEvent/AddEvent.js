@@ -1,19 +1,33 @@
-import Button from "@restart/ui/esm/Button";
 import axios from "axios";
 import React from "react";
-import { Col, FloatingLabel, Form, Row } from "react-bootstrap";
+import { Col, Form, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import swal from "sweetalert";
 import { randomId } from "../../utilities/utilities";
 
 const AddEvent = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
     data.eventId = randomId();
     axios
-      .post("http://localhost:5000/events", data)
+      .post("https://fast-ravine-50741.herokuapp.com/events", data)
       .then((res) => {
-        console.log(res.data);
+        if (res.data.insertedId) {
+          swal({
+            title: " Successful",
+            text: "Successfully added your entered Event",
+            icon: "success",
+          });
+          reset();
+        } else {
+          swal({
+            title: "something went wrong",
+            text: "we are triable to save this events",
+            icon: "error",
+          });
+          reset();
+        }
       })
       .catch((err) => console.log(err.message));
   };

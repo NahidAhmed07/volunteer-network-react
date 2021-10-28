@@ -67,15 +67,12 @@ const Admin = () => {
   };
   return (
     <Container fluid className="my-5 text-start h-100">
-      <Row className="h-100">
+      <Row className="h-100 g-4 g-md-0">
         <Col sm="12" md="4" lg="3" className="h-100">
-          <div
-            style={{ borderRight: "1px solid gray", minHeight: "100vh" }}
-            className="ps-4"
-          >
+          <div className="ps-4">
             <img
               className="img-fluid mb-4"
-              style={{ height: "80px" }}
+              style={{ width: "200px" }}
               src={logo}
               alt=""
             />
@@ -109,7 +106,13 @@ const Admin = () => {
             </Nav.Link>
           </div>
         </Col>
-        <Col sm="12" md="8" lg="9">
+        <Col
+          sm="12"
+          md="8"
+          lg="9"
+          className="ps-2"
+          style={{ borderLeft: "1px solid #adadad" }}
+        >
           <Switch>
             <Route path="/admin/volunteer">
               <VolunteerList

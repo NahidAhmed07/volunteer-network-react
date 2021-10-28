@@ -14,10 +14,10 @@ const Menubar = () => {
   const { user, logOut } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div>
+    <div className="position-relative">
       <Navbar bg="light" expand="lg" fixed="top">
         <Container>
-          <Navbar.Brand as={NavLink} to="/home">
+          <Navbar.Brand className="d-none d-md-block" as={NavLink} to="/home">
             <img src={logo} alt="" height="50px" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

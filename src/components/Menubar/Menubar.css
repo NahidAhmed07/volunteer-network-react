@@ -31,10 +31,10 @@
   position: absolute;
   top: 0;
   right: 30px;
-  top: 90px;
+  top: 20px;
   z-index: 90;
   border-radius: 5px;
-  border: 1px solid rgba(173, 173, 173, 0.479);
+  border: 1px solid #adadad7a;
   box-shadow: 8px 12px 8px 0px rgba(0, 0, 0, 0.28);
   -webkit-box-shadow: 8px 12px 8px 0px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: 8px 12px 8px 0px rgba(0, 0, 0, 0.28);
