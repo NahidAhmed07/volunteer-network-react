@@ -2,7 +2,7 @@
 
 ## Live site link
 
-[live site Link](https://mediex-assignment-10.web.app/) : https://mediex-assignment-10.web.app/
+[live site Link](https://volunteer-network-react-b784e.web.app/) : https://volunteer-network-react-b784e.web.app/
 
 ## Available Scripts
 
